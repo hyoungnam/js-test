@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>javascript test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="lib/css/mocha.css" />
+    <script src="lib/chai.js"></script>
+    <script src="lib/mocha.js"></script>
+    <script src="lib/sinon.js"></script>
+    <script src="lib/sinon-chai.js"></script>
+    <script src="lib/testSupport.js"></script>
+
+    <!-- Source files -->
+    
+    <script src="src/조건문.js"></script>
+    
+    <!-- End source files -->
+
+    <!-- Test files -->
+    <script>
+          var clock;
+
+          before(function() {
+            clock = sinon.useFakeTimers();
+          });
+
+          after(function() {
+            clock.restore();
+          });
+    </script>
+    <script src="spec/조건문.js"></script>
+
+    <!-- End test files -->
+  </head>
+  <body>
+    
+    <div id="mocha"><h1>TIP: 해당 제목을 클릭하면 필터링 됩니다.</h1></div>
+  </body>
+</html>
