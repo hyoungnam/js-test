@@ -35,7 +35,7 @@ function computeAreaOfATriangle(base, height) {
 
 */
 function computePower(num, exponent) {
-  
+  return String(anything);
 }
 
 /** 
