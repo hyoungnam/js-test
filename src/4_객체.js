@@ -22,7 +22,7 @@
 */
 
 function getProperty(obj, propertyName) {
-  
+
 }
 
 /** 

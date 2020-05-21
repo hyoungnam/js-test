@@ -23,7 +23,7 @@
           cpu: 'intel',
           graphic: 'gtx1060ti',
         }
-        expect(getProperty(computer, 'ram')).to.equal();
+        expect(getProperty(computer, 'ram')).to.be.undefined;
       }); 
     });
     describe('2. addProperty', function() {
