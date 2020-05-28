@@ -359,13 +359,13 @@
     
     describe('28_filterOddLengthWords', function() {
       it('TestCase 1', function() {
-        expect(getLongestElement(['one', 'two', 'three'])).to.equal('three');
+        expect(filterOddLengthWords(['there', 'it', 'is', 'now'])).to.eql(['there', 'now']);
       }); 
       it('TestCase 2', function() {
-        expect(getLongestElement(['apple', 'kiwi', 'orange', 'banana', 'berry', 'grape', 'plum'])).to.equal('orange');
+        expect(filterOddLengthWords(['apple', 'kiwi', 'orange', 'banana', 'berry', 'grape', 'plum'])).to.eql(['apple', 'berry', 'grape']);
       }); 
       it('TestCase 3', function() {
-        expect(getLongestElement([])).to.equal('');
+        expect(filterOddLengthWords([])).to.eql([]);
       }); 
     });
 
